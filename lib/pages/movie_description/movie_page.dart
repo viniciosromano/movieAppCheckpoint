@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/models/movie_model.dart';
-import 'package:movie_app/services/api_services.dart'; // Importe seu modelo de dados
 
 class MovieDetailsPage extends StatelessWidget {
   final Movie movie;
@@ -9,9 +8,6 @@ class MovieDetailsPage extends StatelessWidget {
     super.key,
     required this.movie,
   });
-
-  final ApiServices apiServices = ApiServices();
-  late Future<Result> details = apiServices.getDetailsMovies(movie.id);
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:ffi';
 
 import 'package:movie_app/common/utils.dart';
 import 'package:movie_app/models/movie_model.dart';
